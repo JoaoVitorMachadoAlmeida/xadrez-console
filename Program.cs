@@ -1,13 +1,11 @@
 ﻿using System;
-using tabuleiro;
+using board;
 
 class Program
 {
     public static void Main()
     {
-        Posicao p = new Posicao(3,4);
-
-        Console.WriteLine("Posição: " + p);
+        Board board = new Board(8,8);
 
         Console.ReadLine();
     }
