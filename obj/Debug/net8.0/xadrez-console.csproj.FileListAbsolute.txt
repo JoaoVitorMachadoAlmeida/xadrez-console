@@ -1,0 +1,14 @@
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.AssemblyInfoInputs.cache
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.AssemblyInfo.cs
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.csproj.CoreCompileInputs.cache
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.dll
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\refint\xadrez-console.dll
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.pdb
+c:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.exe
+C:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.deps.json
+C:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.runtimeconfig.json
+c:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.dll
+c:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.pdb
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.genruntimeconfig.cache
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\ref\xadrez-console.dll
