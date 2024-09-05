@@ -2,21 +2,30 @@
 using board;
 using xadrez_console;
 using chess;
+using System.Linq.Expressions;
 
 
 class Program
 {
     public static void Main()
     {
-        Board board = new Board(8,8);
+        try
+        {
+            Board board = new Board(8, 8);
 
-        board.PutPiece(new Tower(board, Color.Black), new Position(0,0));
-        board.PutPiece(new Tower(board, Color.Black), new Position(1,3));
-        board.PutPiece(new King(board, Color.Black), new Position(2,4));
+            board.PutPiece(new Tower(board, Color.Black), new Position(0, 0));
+            board.PutPiece(new Tower(board, Color.Black), new Position(1, 3));
+            board.PutPiece(new King(board, Color.Black), new Position(0, 2));
 
-        Screen.PrintScreen(board);
+            Screen.PrintScreen(board);
 
-        Console.ReadLine();
+            Console.ReadLine();
+        }
+        catch (BoardException e)
+        {
+            Console.WriteLine(e.Message);
+
+        }
     }
 }
 
