@@ -12,3 +12,4 @@ c:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.dll
 c:\Users\kiko\xadrez-console\bin\Debug\net8.0\xadrez-console.pdb
 C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.genruntimeconfig.cache
 C:\Users\kiko\xadrez-console\obj\Debug\net8.0\ref\xadrez-console.dll
+C:\Users\kiko\xadrez-console\obj\Debug\net8.0\xadrez-console.sourcelink.json
