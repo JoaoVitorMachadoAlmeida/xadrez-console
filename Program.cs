@@ -9,7 +9,14 @@ class Program
 {
     public static void Main()
     {
-        try
+        
+        ChessPosition chessPosition = new ChessPosition('c', 7);
+
+        Console.WriteLine(chessPosition);
+
+        Console.WriteLine(chessPosition.ToPosition());
+        
+        /*try
         {
             Board board = new Board(8, 8);
 
@@ -25,7 +32,7 @@ class Program
         {
             Console.WriteLine(e.Message);
 
-        }
+        }*/
     }
 }
 
