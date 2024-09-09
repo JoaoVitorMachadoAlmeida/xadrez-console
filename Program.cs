@@ -16,9 +16,11 @@ class Program
 
            while(!game.Finished)
            {
+            
             Console.Clear();
             Screen.PrintScreen(game.board);
 
+            Console.WriteLine();
             Console.Write("Origin: ");
             Position origin = Screen.ReadChessPosition().ToPosition();
             Console.Write("Destination: ");
