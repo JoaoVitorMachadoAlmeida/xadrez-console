@@ -12,25 +12,28 @@ class Program
         
         try
         {
-            Board board = new Board(8, 8);
+           ChessGame game = new ChessGame();
 
-            board.PutPiece(new Tower(board, Color.Black), new Position(0, 0));
-            board.PutPiece(new Tower(board, Color.Black), new Position(1, 3));
-            board.PutPiece(new King(board, Color.Black), new Position(0, 2));
+           while(!game.Finished)
+           {
+            Console.Clear();
+            Screen.PrintScreen(game.board);
 
-            board.PutPiece(new Tower(board, Color.White), new Position(3, 5));
-            board.PutPiece(new Tower(board, Color.White), new Position(2, 4));
-            board.PutPiece(new King(board, Color.White), new Position(3, 3));
+            Console.Write("Origin: ");
+            Position origin = Screen.ReadChessPosition().ToPosition();
+            Console.Write("Destination: ");
+            Position destination = Screen.ReadChessPosition().ToPosition();
 
-            Screen.PrintScreen(board);
-
-            Console.ReadLine();
+            game.ExecuteMove(origin, destination);
+           }
         }
         catch (BoardException e)
         {
             Console.WriteLine(e.Message);
 
         }
+
+        Console.ReadLine();
     }
 }
 

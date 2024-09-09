@@ -14,5 +14,10 @@ namespace board
            Board = board;
            MoveCount = 0; 
         }
+
+        public void IncrementMoveCount()
+        {
+            MoveCount++;
+        }
     }
 }
