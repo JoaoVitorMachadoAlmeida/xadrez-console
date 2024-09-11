@@ -2,20 +2,24 @@ namespace board
 {
     public class Position
     {
-        public int Line{get;set;}
-        public int Columm{get;set;}
+        public int Line { get; set; }
+        public int Column { get; set; }
 
-        public Position(int line, int columm)
+        public Position(int line, int column)
         {
             Line = line;
-            Columm = columm;
+            Column = column;
+        }
+
+        public void DefineValues(int line, int column)
+        {
+            Line = line;
+            Column = column;
         }
 
         public override string ToString()
         {
-            return Line
-            + ", "
-            + Columm;
+            return Line + ", " + Column;
         }
     }
 }

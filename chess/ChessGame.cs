@@ -3,9 +3,9 @@ using board;
 
 namespace chess
 {
-    public class ChessGame
+    class ChessGame
     {
-        public Board board { get; private set;}
+        public Board board { get; private set; }
         private int turn;
         private Color currentPlayer;
         public bool Finished { get; private set; }
