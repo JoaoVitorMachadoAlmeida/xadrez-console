@@ -16,10 +16,8 @@ class Program
                 try
                 {
                 Console.Clear();
-                Screen.PrintScreen(game.board);
-                Console.WriteLine();
-                Console.WriteLine("Turn: " + game.Turn);
-                Console.WriteLine("Waiting for player: " + game.CurrentPlayer);
+                Screen.PrintGame(game);
+                
 
                 Console.WriteLine();
                 Console.Write("Origin: ");
