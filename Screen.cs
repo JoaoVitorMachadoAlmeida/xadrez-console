@@ -15,10 +15,18 @@ namespace xadrez_console
             PrintCapturedPieces(game);
             Console.WriteLine();
             Console.WriteLine("Turn: " + game.Turn);
-            Console.WriteLine("Waiting for player: " + game.CurrentPlayer);
-            if (game.Check)
+            if (!game.Finished)
             {
-                Console.WriteLine("CHECK!");
+                Console.WriteLine("Waiting for player: " + game.CurrentPlayer);
+                if (game.Check)
+                {
+                    Console.WriteLine("CHECK!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("CHECKMATE!");
+                Console.WriteLine("Winner: " + game.CurrentPlayer);
             }
         }
 
@@ -78,7 +86,7 @@ namespace xadrez_console
                         Console.BackgroundColor = originalBackground;
                     }
                     PrintPiece(board.GetPiece(i, j));
-                     Console.BackgroundColor = originalBackground;
+                    Console.BackgroundColor = originalBackground;
                 }
                 Console.WriteLine();
             }
