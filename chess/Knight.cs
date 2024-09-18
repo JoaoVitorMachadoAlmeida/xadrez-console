@@ -21,70 +21,60 @@ namespace chess
         }
 
        public override bool[,] PossibleMoves()
-{
+        {
     bool[,] mat = new bool[board.Lines, board.Columns];
 
-    Position pos = new Position(0, 0);
+        Position pos = new Position(0, 0);
 
-    // Possible Knight moves (L-shape)
+        pos.SetValues(Position.Line - 1, Position.Column - 2);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move up-left
-    pos.DefineValues(position.Line - 1, position.Column - 2);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line - 2, Position.Column - 1);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move up-right
-    pos.DefineValues(position.Line - 1, position.Column + 2);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line - 2, Position.Column + 1);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move down-left
-    pos.DefineValues(position.Line + 1, position.Column - 2);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line - 1, Position.Column + 2);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move down-right
-    pos.DefineValues(position.Line + 1, position.Column + 2);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line + 1, Position.Column + 2);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move left-up
-    pos.DefineValues(position.Line - 2, position.Column - 1);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line + 2, Position.Column + 1);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move left-down
-    pos.DefineValues(position.Line + 2, position.Column - 1);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line + 2, Position.Column - 1);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move right-up
-    pos.DefineValues(position.Line - 2, position.Column + 1);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
+        pos.SetValues(Position.Line + 1, Position.Column - 2);
+        if (Board.ValidPosition(pos) && CanMove(pos))
+        {
+            mat[pos.Line, pos.Column] = true;
+        }
 
-    // Move right-down
-    pos.DefineValues(position.Line + 2, position.Column + 1);
-    if (board.ValidPosition(pos) && CanMove(pos))
-    {
-        mat[pos.Line, pos.Column] = true;
-    }
-
-    return mat;
+        return mat;
         }
     }
 }
